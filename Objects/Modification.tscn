@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://dark_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Objects/Modification.gd" type="Script" id=2]
+
+[node name="Modification" type="HBoxContainer"]
+margin_right = 454.0
+margin_bottom = 24.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Fact" type="OptionButton" parent="."]
+margin_right = 234.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+
+[node name="EqualType" type="OptionButton" parent="."]
+margin_left = 238.0
+margin_right = 276.0
+margin_bottom = 24.0
+text = "+="
+items = [ "+=", null, false, 0, null, "=", null, false, 1, null ]
+selected = 0
+
+[node name="SpinBox" type="SpinBox" parent="."]
+margin_left = 280.0
+margin_right = 420.0
+margin_bottom = 24.0
+
+[node name="DeleteButton" type="ToolButton" parent="."]
+margin_left = 424.0
+margin_right = 454.0
+margin_bottom = 24.0
+text = " X "
+
+[connection signal="item_selected" from="Fact" to="." method="_on_Fact_item_selected"]
+[connection signal="item_selected" from="EqualType" to="." method="_on_EqualType_item_selected"]
+[connection signal="value_changed" from="SpinBox" to="." method="_on_SpinBox_value_changed"]
+[connection signal="pressed" from="DeleteButton" to="." method="_on_DeleteButton_pressed"]

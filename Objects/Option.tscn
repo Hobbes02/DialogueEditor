@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://dark_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Objects/Option.gd" type="Script" id=2]
+
+[node name="Option" type="HBoxContainer"]
+margin_right = 406.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="NameEdit" type="LineEdit" parent="."]
+margin_right = 150.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 150, 0 )
+placeholder_text = "Name"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 154.0
+margin_top = 2.0
+margin_right = 244.0
+margin_bottom = 22.0
+text = "Triggers:"
+
+[node name="TriggersSelect" type="OptionButton" parent="."]
+margin_left = 248.0
+margin_right = 392.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+
+[node name="DeleteButton" type="ToolButton" parent="."]
+margin_left = 396.0
+margin_right = 406.0
+margin_bottom = 24.0
+text = "X"
+
+[connection signal="text_entered" from="NameEdit" to="." method="_on_NameEdit_text_entered"]
+[connection signal="item_selected" from="TriggersSelect" to="." method="_on_TriggersSelect_item_selected"]
+[connection signal="pressed" from="DeleteButton" to="." method="_on_DeleteButton_pressed"]
