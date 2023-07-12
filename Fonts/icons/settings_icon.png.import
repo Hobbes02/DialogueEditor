@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/settings_icon_hover.png-2ce0f8a5bf7481563758ffa9a7696879.stex"
+path="res://.import/settings_icon.png-9f59c1218bfdb14155a4ba133cf9306a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fonts/settings_icon_hover.png"
-dest_files=[ "res://.import/settings_icon_hover.png-2ce0f8a5bf7481563758ffa9a7696879.stex" ]
+source_file="res://Fonts/icons/settings_icon.png"
+dest_files=[ "res://.import/settings_icon.png-9f59c1218bfdb14155a4ba133cf9306a.stex" ]
 
 [params]
 

@@ -6,8 +6,8 @@
 [ext_resource path="res://Editors/FactEditor.gd" type="Script" id=4]
 [ext_resource path="res://Editors/EventEditor.gd" type="Script" id=5]
 [ext_resource path="res://Editors/RuleEditor.gd" type="Script" id=6]
-[ext_resource path="res://Fonts/settings_icon.png" type="Texture" id=7]
-[ext_resource path="res://Fonts/settings_icon_hover.png" type="Texture" id=8]
+[ext_resource path="res://Fonts/icons/settings_icon.png" type="Texture" id=7]
+[ext_resource path="res://Fonts/icons/settings_icon_hover.png" type="Texture" id=8]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 1, 1, 1, 0 )
